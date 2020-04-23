@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <title>进度条插件</title>
+    <link rel="stylesheet" type="text/css" href="../../resources/styles/common/css_reset.css"> <!--css重置-->
+    <link rel="stylesheet" type="text/css" href="../../resources/styles/css/progress_bar.v1.0.0.css">
+    <script type="text/javascript" src="../../resources/scripts/common/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="../../resources/scripts/js/progress_bar_v1.0.0.js"></script>
+</head>
+<body>
+<!-- 进度条 start -->
+<div class="progress-bar" id="progress-bar">
+    <div class="progress-bar-wrapper">
+        <div class="out-big-circle">
+            <div class="shade-left-circle semi-circle fld" id="left-semi-circle"></div>
+            <div class="shade-right-circle semi-circle fld" id="right-semi-circle"></div>
+            <div class="inner-small-circle fld">
+                <div class="progress">
+                    <span class="percentage" id="progress"><i id="percent">0</i>%</span>
+                    <span class="percentage" id="fraction"><i id="dud">0</i>/<i id="total">0</i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="leave-time-wrapper">
+        <div class="content">
+            <span class="text">剩余时间</span>
+            <span class="leave-time" id="leave-time">
+                <span class="hidden" id="hours-wrapper"><i id="hours">0</i>小时</span><span class="hidden"
+                                                                                            id="minute-wrapper"><i
+                    id="minute">0</i>分</span><span class="hidden" id="second-wrapper"><i id="second">0</i>秒</span>
+            </span>
+        </div>
+    </div>
+</div>
+<!-- 进度条 end -->
+</body>
+</html>

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+:root {
+    --backgroundColor: #3399CC;
+    --bigCircleBackgroundColor: #CCFF99;
+    --lrCircleBackgroundColor: #99CCFF;
+    --smalCircleBackgroundColor: #3399CC;
+    --fontColor: #fff;
+}
+
+.progress-bar {
+    background-color: var(--backgroundColor);
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    padding: 25px;
+    outline: none;
+    border-radius: 10px;
+}
+
+.progress-bar-wrapper {
+    width: 150px;
+    height: 120px;
+    background-color: var(--backgroundColor);
+    overflow: hidden;
+    /*border: 1px solid #222222;*/
+}
+
+.out-big-circle {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    background-color: var(--bigCircleBackgroundColor);
+    border-radius: 45px;
+    margin: 30px 30px 0 30px;
+    overflow: hidden;
+    outline: none;
+}
+
+.fld {
+    position: absolute;
+}
+
+.semi-circle {
+    background-color: var(--lrCircleBackgroundColor);
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+}
+
+.shade-left-circle {
+    clip: rect(0, 45px, 90px, 0);
+    z-index: 1;
+}
+
+.shade-right-circle {
+    clip: rect(0, 90px, 90px, 45px);
+    z-index: 0;
+}
+
+.inner-small-circle {
+    background-color: var(--smalCircleBackgroundColor);
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 5px;
+    z-index: 2;
+}
+
+.progress {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 40px;
+    padding-top: 20px;
+}
+
+.percentage {
+    display: table;
+    height: 20px;
+    width: 100%;
+    font-size: 10px;
+    line-height: 20px;
+    color: var(--fontColor);
+}
+
+.leave-time-wrapper {
+/ / TODO
+}
+
+.content {
+    width: 150px;
+    height: 30px;
+    background-color: var(--backgroundColor);
+    text-align: center;
+}
+
+.text, .leave-time {
+    font-size: 12px;
+    line-height: 30px;
+    color: var(--fontColor);
+}
+
+.hidden {
+    display: none;
+}
