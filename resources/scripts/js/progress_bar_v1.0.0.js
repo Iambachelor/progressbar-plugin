@@ -91,7 +91,7 @@ $(document).ready(function () {
     /**
      * uploadProgress()
      * 上传进度
-     * @param attributeValues  该对象有8个属性 selector = {'leftSemiCircle':'','rightSemiCircle':'','percent':'','dud':'','total':'','hours':'', 'minute':'','second':''};
+     * @param attributeValues
      * @param func
      * @param finished
      * @param fileTotal
